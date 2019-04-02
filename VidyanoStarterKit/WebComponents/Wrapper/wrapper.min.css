@@ -1,0 +1,1 @@
+﻿:host{display:block;}:host vi-scroller{--vi-scroller--scroll-shadow-top-offset:60px;}:host vi-scroller header{position:fixed;top:0;left:0;right:0;height:var(--vi-scroller--scroll-shadow-top-offset);line-height:var(--vi-scroller--scroll-shadow-top-offset);}:host vi-scroller vi-app-route-presenter{margin-top:var(--vi-scroller--scroll-shadow-top-offset);}

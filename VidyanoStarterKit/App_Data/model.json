@@ -1,0 +1,1440 @@
+{
+  "Actions": {
+    "AddReference": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 300,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Add"
+      },
+      "IconName": "Add"
+    },
+    "BulkEdit": {
+      "Offset": 400,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "CancelEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "CancelEdit"
+    },
+    "CancelSave": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "Delete": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Delete"
+      },
+      "IconName": "Delete",
+      "ConfirmationMessageKey": "AskForDeleteItems"
+    },
+    "DialogCancel": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "DialogOk": {
+      "IsSystem": true,
+      "SelectionRule": "> 0",
+      "DisplayName": {
+        "en": "OK"
+      },
+      "IconName": "Ok"
+    },
+    "Edit": {
+      "Offset": 100,
+      "ShowedOn": 5,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "EndEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ExportToCsv": {
+      "Offset": 30001,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "ExportToExcel": {
+      "Offset": 30000,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "New": {
+      "Offset": 200,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "New"
+      },
+      "IconName": "Add"
+    },
+    "Remove": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Remove"
+      },
+      "IconName": "Remove"
+    },
+    "Save": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ShowHelp": {
+      "Offset": 60000,
+      "ShowedOn": 7,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Help"
+      },
+      "IsPinned": true,
+      "IconName": "Help"
+    },
+    "viSearch": {
+      "Offset": 1500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Search"
+      },
+      "IsPinned": true,
+      "IconName": "Filter"
+    }
+  },
+  "Templates": [
+    {
+      "$id": "Template:07ee5ebd-7000-423a-b87d-8f6ead81fda7",
+      "Id": "07ee5ebd-7000-423a-b87d-8f6ead81fda7",
+      "Name": "PersistentObjectAttribute_Edit_Image",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Image\">\n  <button type=\"button\"  class=\"persistentObjectAttributeButton clearButton persistentObjectAttributeValuePartRight\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartRight\">\n    <div style=\"position: relative; width: 22px; height: 22px;\">\n      <button type=\"button\" class=\"persistentObjectAttributeButton editButton\" style=\"position: absolute;\" tabIndex=\"-1\"></button>\n      <div class=\"persistentObjectAttributefileInputWrapper\" style=\"position: absolute;\"><input class=\"persistentObjectAttributefileInput\" type=\"file\" accept=\"image/*\"></input></div>\n    </div>\n  </div>\n  <div class=\"persistentObjectAttributeValuePartFill\">\n    <div class=\"persistentObjectAttributeValueImageContainer\"><% if (value != null) { %><img src=\"<%= value.asDataUri() %>\" /><% } %></div>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:0bb94fa1-2508-481f-9e20-c29500e99a69",
+      "Id": "0bb94fa1-2508-481f-9e20-c29500e99a69",
+      "Name": "PersistentObjectAttribute_Edit_Date",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Date\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>"
+    },
+    {
+      "$id": "Template:11aa1940-26ca-473f-864e-a97b0d4adbba",
+      "Id": "11aa1940-26ca-473f-864e-a97b0d4adbba",
+      "Name": "PersistentObjectAttribute_MultiLineString",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_MultiLineString\"><span><%= displayValue() %></span></div>"
+    },
+    {
+      "$id": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1",
+      "Id": "1641ce2e-5a3d-4a37-9b96-6b78bebfebd1",
+      "Name": "PersistentObjectAttribute_Edit_Numeric",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Numeric\"><input class=\"persistentObjectAttributeEditInput\" type=\"text\"></input></div>"
+    },
+    {
+      "$id": "Template:1902bc0f-c836-487b-bd39-8699750f30cf",
+      "Id": "1902bc0f-c836-487b-bd39-8699750f30cf",
+      "Name": "PersistentObjectAttribute_Edit_NullableDateTime",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DateTime\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton clearButton persistentObjectAttributeValuePartRight\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\" >\n    <div class=\"persistentObjectAttributeValueTwoPartShare\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>\n    <div class=\"persistentObjectAttributeValueTwoPartShare\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:21bdfcc1-15db-4400-a803-0bf3f12ad8a6",
+      "Id": "21bdfcc1-15db-4400-a803-0bf3f12ad8a6",
+      "Name": "PersistentObjectAttribute_Edit_Reference",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Reference\"><% if(selectInPlace) { %><button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight clearButton\" tabIndex=\"-1\"></button>\n<button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight addReferenceButton\" tabIndex=\"-1\"></button>\n<div class=\"persistentObjectAttributeValuePartFill\"><select class=\"persistentObjectAttributeEditEditableSelect\"><% selectInPlaceOptions().run(function(option) { %><option value='<%= option.key %>'><%= option.value %></option><% }); %></select></div>\n<% } else { %>  <button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight clearButton\" tabIndex=\"-1\"></button>\n<button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight addReferenceButton\" tabIndex=\"-1\"></button>\n<button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight browseReferenceButton\" tabIndex=\"-1\"></button>\n<div class=\"persistentObjectAttributeValuePartFill\"><input type=\"text\" readonly=\"readonly\"></input></div>\n<% } %></div>"
+    },
+    {
+      "$id": "Template:2df22684-fb7e-4f03-bf8d-4510f7ab6429",
+      "Id": "2df22684-fb7e-4f03-bf8d-4510f7ab6429",
+      "Name": "PersistentObjectAttribute_Edit_TranslatedString",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_TranslatedString\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton editButton persistentObjectAttributeValuePartRight\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\"><input type=\"text\"></input></div>\n  <div class=\"persistentObjectAttributeEditLanguages\"></div>\n</div>"
+    },
+    {
+      "$id": "Template:2e0f5579-35fd-4cb2-bb7c-992bbe3b6587",
+      "Id": "2e0f5579-35fd-4cb2-bb7c-992bbe3b6587",
+      "Name": "PersistentObjectAttribute_Edit_AsDetail",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_AsDetail\"></div>"
+    },
+    {
+      "$id": "Template:34b00ecc-344e-40cb-9bb0-df1272310191",
+      "Id": "34b00ecc-344e-40cb-9bb0-df1272310191",
+      "Name": "PersistentObjectAttribute_User",
+      "IsSystem": true,
+      "Data": "<span><%= options[0] %></span>"
+    },
+    {
+      "$id": "Template:385d55b6-75fd-4e63-92cf-2427fd82b8f9",
+      "Id": "385d55b6-75fd-4e63-92cf-2427fd82b8f9",
+      "Name": "PersistentObjectAttribute_BinaryFile",
+      "IsSystem": true,
+      "Data": "<span><%= binaryFileName() %></span>"
+    },
+    {
+      "$id": "Template:4865df2c-404b-4517-a1b2-c4e8dd43dc34",
+      "Id": "4865df2c-404b-4517-a1b2-c4e8dd43dc34",
+      "Name": "PersistentObjectAttribute_Edit_MultiString",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_MultiString\"><input type=\"text\"></input></div>"
+    },
+    {
+      "$id": "Template:5256f01e-1e54-4969-9dd2-d67944dfba9e",
+      "Id": "5256f01e-1e54-4969-9dd2-d67944dfba9e",
+      "Name": "PersistentObjectAttribute_Edit_Boolean",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_YesNo\">\n  <div class=\"persistentObjectAttributeRadioSet\" style=\"display:none\">    \n    <% var rnd = getRandom(); %>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_true\" name=\"attribute_<%=name%>_radio\" value=\"true\"></input><label for=\"attribute_<%=name+rnd%>_true\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"TrueKey\", \"True\"))%></label>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_false\" name=\"attribute_<%=name%>_radio\" value=\"false\"></input><label for=\"attribute_<%=name+rnd%>_false\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"FalseKey\", \"False\"))%></label>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:5f45418c-3bad-4bf8-99e9-554cf5923ee4",
+      "Id": "5f45418c-3bad-4bf8-99e9-554cf5923ee4",
+      "Name": "PersistentObjectAttribute_Edit_NullableDateTimeOffset",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DateTimeOffset\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton clearButton persistentObjectAttributeValuePartRight\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\">\n    <div class=\"persistentObjectAttributeValueThreePartShare\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>\n    <div class=\"persistentObjectAttributeValueThreePartShare\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>\n    <div class=\"persistentObjectAttributeValueThreePartShare\"><select class=\"persistentObjectAttributeEditOffset\"></select></div>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:6099c1a1-9f34-44da-ac4a-fc79dc2f4792",
+      "Id": "6099c1a1-9f34-44da-ac4a-fc79dc2f4792",
+      "Name": "PersistentObjectAttribute_Edit_ComboBox",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_ComboBox\"><select class=\"persistentObjectAttributeEditEditableSelect\"><% options.run(function(option) { %> <option><%= option %></option> <% }); %></select></div>"
+    },
+    {
+      "$id": "Template:61dbcbb0-2f01-402d-9b30-3422cf41ee39",
+      "Id": "61dbcbb0-2f01-402d-9b30-3422cf41ee39",
+      "Name": "PersistentObjectAttribute_Edit_Password",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_String\"><input type=\"password\" <% if(getTypeHint(\"MaxLength\",0) != 0) { print('maxlength=\"' + getTypeHint(\"MaxLength\",0) + '\"')} %> value=\"<%- value %>\"></input></div>"
+    },
+    {
+      "$id": "Template:63ae4bc2-371d-4db5-9fcd-469ff6f5ef36",
+      "Id": "63ae4bc2-371d-4db5-9fcd-469ff6f5ef36",
+      "Name": "PersistentObjectAttribute_AsDetail",
+      "IsSystem": true,
+      "Data": "<div class='persistentObjectAttribute_Edit_AsDetail'></div>"
+    },
+    {
+      "$id": "Template:645e6a65-4132-45bd-b9f7-891cbf7b7eeb",
+      "Id": "645e6a65-4132-45bd-b9f7-891cbf7b7eeb",
+      "Name": "PersistentObjectAttribute_Edit_BinaryFile",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_BinaryFile\">\n  <input class=\"persistentObjectAttributeValuePartRight persistentObjectAttributefileInput\" type=\"file\"></input>\n  <div class=\"persistentObjectAttributeValuePartFill\"><input value=\"<%= binaryFileName() %>\" type=\"text\" readonly=\"readonly\"></input></div>\n</div>"
+    },
+    {
+      "$id": "Template:64eb6cec-f773-4795-8b0d-bef2d1647ab9",
+      "Id": "64eb6cec-f773-4795-8b0d-bef2d1647ab9",
+      "Name": "PersistentObjectAttribute_Edit_NullableGuid",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_String\"><input type=\"text\" maxLength=\"36\"></input></div>"
+    },
+    {
+      "$id": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f",
+      "Id": "6674a5e0-639a-4f58-854b-ae1f1c729a0f",
+      "Name": "QueryColumn_DEFAULT",
+      "IsSystem": true
+    },
+    {
+      "$id": "Template:700c8a54-1c5c-4f73-9d40-c9ba45faf9f3",
+      "Id": "700c8a54-1c5c-4f73-9d40-c9ba45faf9f3",
+      "Name": "PersistentObjectAttribute_Edit_Guid",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_String\"><input type=\"text\" maxLength=\"36\"></input></div>"
+    },
+    {
+      "$id": "Template:75448ab5-7c4f-4526-bc38-f4cb7b0cdbef",
+      "Id": "75448ab5-7c4f-4526-bc38-f4cb7b0cdbef",
+      "Name": "PersistentObjectAttribute_Reference",
+      "IsSystem": true,
+      "Data": "<% if(lookup.canRead){ %>\n<a class=\"referenceNavigation <% if (!hasValue()) { print('noValue'); }%>\"<% if (hasValue()) { %> href=\"#!/<%= Vidyano.app.getUrlForPersistentObject(lookup.persistentObject, objectId) %>\" onclick=\"$(this).dataContext().navigateToReference();return false\"<% } %>><%= displayValue() %> &nbsp;</a>\n<%} else {%><span><%= displayValue() %></span><% } %>"
+    },
+    {
+      "$id": "Template:79d3d0b5-78d1-4150-8215-c9f9acc13385",
+      "Id": "79d3d0b5-78d1-4150-8215-c9f9acc13385",
+      "Name": "PersistentObjectAttribute_Edit_FlagsEnum",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_FlagsEnum\"><select class=\"persistentObjectAttributeEditSelect\" multiple=\"multiple\"><% options.run(function(option) { %> <option><%= option %></option> <% }); %></select></div>"
+    },
+    {
+      "$id": "Template:8fbf5997-1b1c-41a2-a3dc-91482fc8172f",
+      "Id": "8fbf5997-1b1c-41a2-a3dc-91482fc8172f",
+      "Name": "PersistentObjectAttribute_Edit_DropDown",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DropDown\"><select class=\"persistentObjectAttributeEditSelect\"></select></div>"
+    },
+    {
+      "$id": "Template:95b4e982-8285-4004-8eb5-eb768fd2d394",
+      "Id": "95b4e982-8285-4004-8eb5-eb768fd2d394",
+      "Name": "PersistentObjectAttribute_Edit_NullableDate",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Date\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton clearButton persistentObjectAttributeValuePartRight\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>\n</div>"
+    },
+    {
+      "$id": "Template:98d427dd-6819-4199-bff6-d3bb9616f21c",
+      "Id": "98d427dd-6819-4199-bff6-d3bb9616f21c",
+      "Name": "PersistentObjectAttribute_Edit_Time",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Time\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>"
+    },
+    {
+      "$id": "Template:9db770fa-2872-4057-8e84-3fde45a13a30",
+      "Id": "9db770fa-2872-4057-8e84-3fde45a13a30",
+      "Name": "PersistentObjectAttribute_Edit_NullableBoolean",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_YesNo\">\n  <div class=\"persistentObjectAttributeRadioSet\" style=\"display:none\">    \n    <% var rnd = getRandom(); %>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_true\" name=\"attribute_<%=name%>_radio\" value=\"true\"></input><label for=\"attribute_<%=name+rnd%>_true\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"TrueKey\", \"True\"))%></label>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_null\" name=\"attribute_<%=name%>_radio\" value=\"null\"></input><label for=\"attribute_<%=name+rnd%>_null\">&nbsp;</label>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_false\" name=\"attribute_<%=name%>_radio\" value=\"false\"></input><label for=\"attribute_<%=name+rnd%>_false\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"FalseKey\", \"False\"))%></label>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:a110e8ee-f9a7-4fe8-8581-b6c1debc67b4",
+      "Id": "a110e8ee-f9a7-4fe8-8581-b6c1debc67b4",
+      "Name": "PersistentObjectAttribute_Edit_DEFAULT",
+      "IsSystem": true,
+      "Data": "<input type=\"text\" id=\"<%= id %>\" value=\"<%- value %>\" onkeyup=\"$(this).attributeChanged(false)\" onblur=\"$(this).attributeChanged(true)\" style=\"width:100%\"></input>"
+    },
+    {
+      "$id": "Template:a782abc5-9c9d-43d4-a8c1-41a9e60f8f2c",
+      "Id": "a782abc5-9c9d-43d4-a8c1-41a9e60f8f2c",
+      "Name": "PersistentObjectAttribute_Edit_KeyValueList",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DropDown\"><select class=\"persistentObjectAttributeEditSelect\"></select></div>"
+    },
+    {
+      "$id": "Template:a80fb659-9ebe-456d-ab1f-344c1f202724",
+      "Id": "a80fb659-9ebe-456d-ab1f-344c1f202724",
+      "Name": "PersistentObjectAttribute_Edit_User",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_User\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton clearButton persistentObjectAttributeValuePartRight\" tabIndex=\"-1\"></button>\n  <button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight browseReferenceButton\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\"><input type=\"text\" readonly=\"readonly\"></input></div>\n</div>"
+    },
+    {
+      "$id": "Template:aa837492-0669-4580-9bc6-f949eb99f298",
+      "Id": "aa837492-0669-4580-9bc6-f949eb99f298",
+      "Name": "PersistentObject_GlobalSearch",
+      "IsSystem": true,
+      "Data": "<span><%= Vidyano.app.getTranslatedMessage(\"NoResultsFound\") %></span>"
+    },
+    {
+      "$id": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88",
+      "Id": "b7a5cc2a-a7a2-4e35-92d6-064121b85e88",
+      "Name": "PersistentObjectAttribute_DEFAULT",
+      "IsSystem": true,
+      "Data": "<span><%= displayValue() %></span>"
+    },
+    {
+      "$id": "Template:bd4108f2-585a-4b66-ada5-4ba5257ecd38",
+      "Id": "bd4108f2-585a-4b66-ada5-4ba5257ecd38",
+      "Name": "PersistentObjectAttribute_Edit_DateTime",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DateTime\">\n  <div class=\"persistentObjectAttributeValuePartFill\" >\n    <div class=\"persistentObjectAttributeValueTwoPartShare\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>\n    <div class=\"persistentObjectAttributeValueTwoPartShare\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:bfff11cc-31f8-4d81-84b2-6720d80be7b8",
+      "Id": "bfff11cc-31f8-4d81-84b2-6720d80be7b8",
+      "Name": "PersistentObjectAttribute_Edit_MultiLineString",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_MultiLineString\">\n  <textarea <% if(getTypeHint(\"MaxLength\",0) != 0) { print('maxlength=\"' + getTypeHint(\"MaxLength\",0) + '\"')} %> onkeyup=\"$(this).attributeChanged(false)\" onblur=\"$(this).attributeChanged(true)\" style=\"height:<%=getTypeHint(\"Height\",75)%>px\"><%- value %></textarea>\n</div>"
+    },
+    {
+      "$id": "Template:c211ea94-534c-4a53-ac8e-efcc374b3946",
+      "Id": "c211ea94-534c-4a53-ac8e-efcc374b3946",
+      "Name": "PersistentObjectAttribute_Edit_YesNo",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_YesNo\">\n  <div class=\"persistentObjectAttributeRadioSet\" style=\"display:none\">\n    <% var rnd = getRandom(); %>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_true\" name=\"attribute_<%=name%>_radio\" value=\"true\"></input><label for=\"attribute_<%=name+rnd%>_true\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"TrueKey\", \"Yes\"))%></label>\n    <input type=\"radio\" id=\"attribute_<%=name+rnd%>_false\" name=\"attribute_<%=name%>_radio\" value=\"false\"></input><label for=\"attribute_<%=name+rnd%>_false\"><%=Vidyano.app.getTranslatedMessage(getTypeHint(\"FalseKey\", \"No\"))%></label>\n  </div>\n</div>"
+    },
+    {
+      "$id": "Template:cc09c4b6-a4f6-4437-a934-a1d2a9cd8e59",
+      "Id": "cc09c4b6-a4f6-4437-a934-a1d2a9cd8e59",
+      "Name": "PersistentObject_LogVerboseData",
+      "IsSystem": true,
+      "Data": "<div data-vidyano-attribute=\"Data\" style=\"position: absolute;left: 0;right: 0;top: 0;bottom: 0;\"></div>"
+    },
+    {
+      "$id": "Template:d27b6c7f-5d32-45ac-9445-1cecbfc38b2b",
+      "Id": "d27b6c7f-5d32-45ac-9445-1cecbfc38b2b",
+      "Name": "PersistentObjectAttribute_Edit_NullableTime",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_Time\">\n  <button type=\"button\" class=\"persistentObjectAttributeButton persistentObjectAttributeValuePartRight clearButton\" tabIndex=\"-1\"></button>\n  <div class=\"persistentObjectAttributeValuePartFill\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>\n</div>"
+    },
+    {
+      "$id": "Template:d8d900ad-29fe-4497-a2ed-c87143681330",
+      "Id": "d8d900ad-29fe-4497-a2ed-c87143681330",
+      "Name": "PersistentObject_License",
+      "IsSystem": true,
+      "Data": "<div>\n  <label data-vidyano-attribute=\"ApplicationToken\"></label><div><div data-vidyano-attribute=\"ApplicationToken\" style=\"width: 300px\"></div></div>\n  <label data-vidyano-attribute=\"Password\"></label><div><div data-vidyano-attribute=\"Password\" style=\"width: 300px\"></div></div>\n<% var applicationToken = obj.getAttributeValue(\"ApplicationToken\"); if (!isNullOrEmpty(applicationToken)) { %>\n  <label data-vidyano-attribute=\"IsActivated\"></label><div data-vidyano-attribute=\"IsActivated\"></div>\n  <label data-vidyano-attribute=\"Expires\"></label><div data-vidyano-attribute=\"Expires\"></div>\n  <label data-vidyano-attribute=\"MaxUsers\"></label><div data-vidyano-attribute=\"MaxUsers\"></div>\n<% } else { %>\n  <label class=\"persistentObjectAttributeLabel\"><a href=\"http://www.vidyano.com/Buy\" target=\"_blank\">Buy Application token</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<a href=\"#!/\" onclick=\"Vidyano.app._requestTrial(); return false;\">Request a free Trial token</a><label>\n<% } %>\n</div>"
+    },
+    {
+      "$id": "Template:e849ede4-2d23-4e00-ab59-683a554b3378",
+      "Id": "e849ede4-2d23-4e00-ab59-683a554b3378",
+      "Name": "PersistentObjectAttribute_Image",
+      "IsSystem": true,
+      "Data": "<% if (!isNullOrWhiteSpace(value)) { %><a href=\"<%= value.asDataUri() %>\" target=\"_blank\"><img src=\"<%= value.asDataUri() %>\" <% var w = getTypeHint(\"Width\", \"24\"); var h = getTypeHint(\"Height\", \"24\"); if (w != \"auto\" && h != \"auto\") { print(\"width=\\\"\" + w + \"\\\" height=\\\"\" + h + \"\\\"\"); } else { print(w == \"auto\" ? (\"height=\\\"\" + h + \"\\\"\") : (\"width=\\\"\" + w + \"\\\"\")); } %>/></a><% } %>"
+    },
+    {
+      "$id": "Template:e9e415b8-94fd-4201-b965-8f8660cb7cf9",
+      "Id": "e9e415b8-94fd-4201-b965-8f8660cb7cf9",
+      "Name": "PersistentObjectAttribute_Edit_String",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_String\"><div class=\"persistentObjectAttributeButton suggestButton persistentObjectAttributeValuePartRight\"></div><div class=\"persistentObjectAttributeValuePartFill\"><input type=\"<%=getTypeHint(\"InputType\", \"text\")%>\" <% if(getTypeHint(\"MaxLength\", 0) != 0) { print('maxlength=\"' + getTypeHint(\"MaxLength\", 0) + '\"')} %>></input></div></div>"
+    },
+    {
+      "$id": "Template:ed5a0666-2f24-414a-8a90-1756c49661cd",
+      "Id": "ed5a0666-2f24-414a-8a90-1756c49661cd",
+      "Name": "PersistentObjectAttribute_Password",
+      "IsSystem": true,
+      "Data": "<span>••••••</span>"
+    },
+    {
+      "$id": "Template:f29e30bc-ce67-4f9b-87ad-56bbab842cf3",
+      "Id": "f29e30bc-ce67-4f9b-87ad-56bbab842cf3",
+      "Name": "PersistentObjectAttribute_Edit_DateTimeOffset",
+      "IsSystem": true,
+      "Data": "<div class=\"persistentObjectAttribute_Edit_DateTimeOffset persistentObjectAttributeValuePartFill\">\n  <div class=\"persistentObjectAttributeValueThreePartShare\"><input class=\"persistentObjectAttributeEditDateInput\" type=\"text\"></input></div>\n  <div class=\"persistentObjectAttributeValueThreePartShare\"><input class=\"persistentObjectAttributeEditTime\" type=\"text\"></input></div>\n  <div class=\"persistentObjectAttributeValueThreePartShare\"><select class=\"persistentObjectAttributeEditOffset\"></select></div>\n</div>"
+    },
+    {
+      "$id": "Template:fa2a2b12-996a-4ad2-b416-63a723bfdc12",
+      "Id": "fa2a2b12-996a-4ad2-b416-63a723bfdc12",
+      "Name": "QueryColumn_Image",
+      "IsSystem": true
+    }
+  ],
+  "DataTypes": {
+    "AsDetail": {
+      "$id": "DataType:AsDetail",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:2e0f5579-35fd-4cb2-bb7c-992bbe3b6587"
+      },
+      "Attribute": {
+        "$ref": "Template:63ae4bc2-371d-4db5-9fcd-469ff6f5ef36"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "BinaryFile": {
+      "$id": "DataType:BinaryFile",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:645e6a65-4132-45bd-b9f7-891cbf7b7eeb"
+      },
+      "Attribute": {
+        "$ref": "Template:385d55b6-75fd-4e63-92cf-2427fd82b8f9"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Boolean": {
+      "$id": "DataType:Boolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:5256f01e-1e54-4969-9dd2-d67944dfba9e"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Byte": {
+      "$id": "DataType:Byte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "ComboBox": {
+      "$id": "DataType:ComboBox",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:6099c1a1-9f34-44da-ac4a-fc79dc2f4792"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "CommonMark": {
+      "$id": "DataType:CommonMark",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:bfff11cc-31f8-4d81-84b2-6720d80be7b8"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Date": {
+      "$id": "DataType:Date",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:0bb94fa1-2508-481f-9e20-c29500e99a69"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "DateTime": {
+      "$id": "DataType:DateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:bd4108f2-585a-4b66-ada5-4ba5257ecd38"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "DateTimeOffset": {
+      "$id": "DataType:DateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:f29e30bc-ce67-4f9b-87ad-56bbab842cf3"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Decimal": {
+      "$id": "DataType:Decimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Double": {
+      "$id": "DataType:Double",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "DropDown": {
+      "$id": "DataType:DropDown",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:8fbf5997-1b1c-41a2-a3dc-91482fc8172f"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Enum": {
+      "$id": "DataType:Enum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:8fbf5997-1b1c-41a2-a3dc-91482fc8172f"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "FlagsEnum": {
+      "$id": "DataType:FlagsEnum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:79d3d0b5-78d1-4150-8215-c9f9acc13385"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Geography": {
+      "$id": "DataType:Geography",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": true,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:e9e415b8-94fd-4201-b965-8f8660cb7cf9"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Guid": {
+      "$id": "DataType:Guid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:700c8a54-1c5c-4f73-9d40-c9ba45faf9f3"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Image": {
+      "$id": "DataType:Image",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:07ee5ebd-7000-423a-b87d-8f6ead81fda7"
+      },
+      "Attribute": {
+        "$ref": "Template:e849ede4-2d23-4e00-ab59-683a554b3378"
+      },
+      "Column": {
+        "$ref": "Template:fa2a2b12-996a-4ad2-b416-63a723bfdc12"
+      }
+    },
+    "Int16": {
+      "$id": "DataType:Int16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Int32": {
+      "$id": "DataType:Int32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Int64": {
+      "$id": "DataType:Int64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "KeyValueList": {
+      "$id": "DataType:KeyValueList",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:a782abc5-9c9d-43d4-a8c1-41a9e60f8f2c"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "MultiLineString": {
+      "$id": "DataType:MultiLineString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:bfff11cc-31f8-4d81-84b2-6720d80be7b8"
+      },
+      "Attribute": {
+        "$ref": "Template:11aa1940-26ca-473f-864e-a97b0d4adbba"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "MultiString": {
+      "$id": "DataType:MultiString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:4865df2c-404b-4517-a1b2-c4e8dd43dc34"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableBoolean": {
+      "$id": "DataType:NullableBoolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:9db770fa-2872-4057-8e84-3fde45a13a30"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableByte": {
+      "$id": "DataType:NullableByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableDate": {
+      "$id": "DataType:NullableDate",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:95b4e982-8285-4004-8eb5-eb768fd2d394"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableDateTime": {
+      "$id": "DataType:NullableDateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1902bc0f-c836-487b-bd39-8699750f30cf"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableDateTimeOffset": {
+      "$id": "DataType:NullableDateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:5f45418c-3bad-4bf8-99e9-554cf5923ee4"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableDecimal": {
+      "$id": "DataType:NullableDecimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableDouble": {
+      "$id": "DataType:NullableDouble",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableGuid": {
+      "$id": "DataType:NullableGuid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:64eb6cec-f773-4795-8b0d-bef2d1647ab9"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableInt16": {
+      "$id": "DataType:NullableInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableInt32": {
+      "$id": "DataType:NullableInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableInt64": {
+      "$id": "DataType:NullableInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableSByte": {
+      "$id": "DataType:NullableSByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableSingle": {
+      "$id": "DataType:NullableSingle",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableTime": {
+      "$id": "DataType:NullableTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:d27b6c7f-5d32-45ac-9445-1cecbfc38b2b"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableUInt16": {
+      "$id": "DataType:NullableUInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableUInt32": {
+      "$id": "DataType:NullableUInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableUInt64": {
+      "$id": "DataType:NullableUInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "NullableUser": {
+      "$id": "DataType:NullableUser",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:a80fb659-9ebe-456d-ab1f-344c1f202724"
+      },
+      "Attribute": {
+        "$ref": "Template:34b00ecc-344e-40cb-9bb0-df1272310191"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Password": {
+      "$id": "DataType:Password",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false,
+      "AttributeEdit": {
+        "$ref": "Template:61dbcbb0-2f01-402d-9b30-3422cf41ee39"
+      },
+      "Attribute": {
+        "$ref": "Template:ed5a0666-2f24-414a-8a90-1756c49661cd"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Reference": {
+      "$id": "DataType:Reference",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:21bdfcc1-15db-4400-a803-0bf3f12ad8a6"
+      },
+      "Attribute": {
+        "$ref": "Template:75448ab5-7c4f-4526-bc38-f4cb7b0cdbef"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "SByte": {
+      "$id": "DataType:SByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Single": {
+      "$id": "DataType:Single",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "String": {
+      "$id": "DataType:String",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:e9e415b8-94fd-4201-b965-8f8660cb7cf9"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "Time": {
+      "$id": "DataType:Time",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:98d427dd-6819-4199-bff6-d3bb9616f21c"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "TranslatedString": {
+      "$id": "DataType:TranslatedString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:2df22684-fb7e-4f03-bf8d-4510f7ab6429"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "UInt16": {
+      "$id": "DataType:UInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "UInt32": {
+      "$id": "DataType:UInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "UInt64": {
+      "$id": "DataType:UInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:1641ce2e-5a3d-4a37-9b96-6b78bebfebd1"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "User": {
+      "$id": "DataType:User",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:a80fb659-9ebe-456d-ab1f-344c1f202724"
+      },
+      "Attribute": {
+        "$ref": "Template:34b00ecc-344e-40cb-9bb0-df1272310191"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    },
+    "YesNo": {
+      "$id": "DataType:YesNo",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true,
+      "AttributeEdit": {
+        "$ref": "Template:c211ea94-534c-4a53-ac8e-efcc374b3946"
+      },
+      "Attribute": {
+        "$ref": "Template:b7a5cc2a-a7a2-4e35-92d6-064121b85e88"
+      },
+      "Column": {
+        "$ref": "Template:6674a5e0-639a-4f58-854b-ae1f1c729a0f"
+      }
+    }
+  },
+  "Rules": {},
+  "Schemas": {
+    "VidyanoStarterKit": {
+      "PersistentObjects": {
+        "443d2f49-31cf-3591-a896-21c42a9fdafd": {
+          "$id": "PersistentObject:443d2f49-31cf-3591-a896-21c42a9fdafd",
+          "SchemaName": "VidyanoStarterKit",
+          "Type": "Contact",
+          "Salt": "1ThBhRZueuKVM_TnceSx05_PcYtgV9Pr2P-hFDrYYJY",
+          "Label": {
+            "en": "Contact"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b",
+              "Id": "8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3",
+              "Id": "b7850a8b-a726-4290-b781-e6e7144331a3",
+              "ColumnCount": 2
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:a8b347a5-23c4-3b20-a45f-17814e9bd870",
+              "Id": "a8b347a5-23c4-3b20-a45f-17814e9bd870",
+              "Offset": 20,
+              "Rules": "NotEmpty; IsEmail",
+              "Name": "Email",
+              "Label": {
+                "en": "E-mail"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:078a1c35-f2fc-3aca-a692-c22a078ec2ff",
+              "Id": "078a1c35-f2fc-3aca-a692-c22a078ec2ff",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "FirstName",
+              "Label": {
+                "en": "First name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:4327a049-b6cf-38d8-86fd-842fb758494b",
+              "Id": "4327a049-b6cf-38d8-86fd-842fb758494b",
+              "Offset": 15,
+              "Rules": "NotEmpty",
+              "Name": "LastName",
+              "Label": {
+                "en": "Last name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:d87335ae-7566-35c1-a4e8-082a7021b95e",
+              "Id": "d87335ae-7566-35c1-a4e8-082a7021b95e",
+              "Offset": 30,
+              "Rules": "MaxLength(1000); NotEmpty",
+              "Name": "Message",
+              "Label": {
+                "en": "Message"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 2,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:67301c64-8739-3402-82d5-ffc30af12fc9",
+              "Id": "67301c64-8739-3402-82d5-ffc30af12fc9",
+              "Offset": 25,
+              "Name": "Phone",
+              "Label": {
+                "en": "Phone"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8efa2f79-5f31-4252-a0f9-3c3f7f7ca89b"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:b7850a8b-a726-4290-b781-e6e7144331a3"
+              }
+            }
+          ],
+          "Queries": []
+        }
+      },
+      "Queries": {}
+    }
+  },
+  "ProgramUnits": [
+    {
+      "Name": "Home",
+      "Title": {
+        "en": "Home"
+      },
+      "Groups": [],
+      "Items": []
+    }
+  ],
+  "Reports": [],
+  "ServiceVersion": "5.41.0+d11df5d",
+  "SeederHash": "dNjUy9U/waF+QkKW/VqUqzBx6hSr96TA/komargs96Y="
+}

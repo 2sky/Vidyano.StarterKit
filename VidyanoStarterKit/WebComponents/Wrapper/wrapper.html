@@ -1,0 +1,24 @@
+﻿<dom-module id="vsk-wrapper">
+    <template>
+        <link rel="stylesheet" href="wrapper.css" />
+        <vi-scroller id="scroller" class="fit" hide-scrollbars="[[menuOpen]]">
+            <header>
+                <div class="layout horizontal justified">
+                    <label>[[app.label]]</label>
+                    <button is="vi-button" icon="Hamburger" inverse hide-desktop on-tap="_toggleMenu"></button>
+                    <nav on-tap="_toggleMenu" open$="[[menuOpen]]"">
+                        <ul>
+                            <template is="dom-repeat" items="[[sections]]" as="section">
+                                <li on-tap="_scrollIntoView">[[_getMenuFromSection(section)]]</li>
+                            </template>
+                            <li on-tap="_signIn"><vi-icon source="User"></vi-icon></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <vi-app-route-presenter></vi-app-route-presenter>
+        </vi-scroller>
+     </template>
+</dom-module>
+
+<script src="wrapper.js"></script>

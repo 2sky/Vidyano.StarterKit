@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+:host button {
+  line-height: var(--theme-h1);
+  padding: 0 var(--theme-h1);
+}

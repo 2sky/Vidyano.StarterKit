@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "WebComponents/Wrapper/wrapper.css",
+    "inputFile": "WebComponents/Wrapper/wrapper.scss"
+  },
+  {
+    "outputFile": "WebComponents/Home/home.css",
+    "inputFile": "WebComponents/Home/home.scss"
+  },
+  {
+    "outputFile": "WebComponents/Contact/contact.css",
+    "inputFile": "WebComponents/Contact/contact.scss"
+  }
+]

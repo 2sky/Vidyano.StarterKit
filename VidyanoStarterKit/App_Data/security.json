@@ -1,0 +1,15 @@
+{
+  "Groups": {},
+  "Rights": [
+    {
+      "Id": "f599e912-81a6-4d8c-b882-f93cbc42507b",
+      "Resource": "New/VidyanoStarterKit.Contact",
+      "UserId": "74589c5f-7dbd-4e6f-97c0-07db5e3206d3"
+    },
+    {
+      "Id": "b959433a-be65-435b-9c80-2c6544b7795f",
+      "Resource": "Query/VidyanoStarterKit",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    }
+  ]
+}

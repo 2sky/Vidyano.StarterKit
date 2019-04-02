@@ -1,0 +1,138 @@
+:host {
+  display: block;
+  --vsk-wrapper--max-width: 1100px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:host vi-scroller {
+  --vi-scroller--scroll-shadow-top-offset: 60px;
+}
+
+:host vi-scroller header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--vi-scroller--scroll-shadow-top-offset);
+  line-height: var(--vi-scroller--scroll-shadow-top-offset);
+  z-index: 1;
+  will-change: padding;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: white;
+  color: #333;
+  fill: #333;
+}
+
+:host vi-scroller header > div {
+  padding: 0 calc(var(--theme-h1) - var(--theme-h4)) 0 var(--theme-h1);
+  margin: 0 auto;
+  max-width: var(--vsk-wrapper--max-width);
+}
+
+:host vi-scroller header > div > label {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+:host vi-scroller header > div > button {
+  width: var(--vi-scroller--scroll-shadow-top-offset);
+  --vi-icon-width: 24px;
+  --vi-icon-height: 24px;
+}
+
+:host vi-scroller[at-top] header {
+  padding: var(--theme-h4) 0;
+  background-color: transparent;
+  color: white;
+  fill: white;
+}
+
+:host nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:host nav ul li {
+  line-height: var(--theme-h1);
+  text-transform: uppercase;
+  cursor: pointer;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+:host nav ul li > vi-icon {
+  line-height: var(--theme-h1);
+  height: var(--theme-h1);
+}
+
+:host[is-desktop] nav li {
+  position: relative;
+  display: inline-block;
+  line-height: var(--theme-h1);
+  padding: 0 var(--theme-h4);
+}
+
+:host[is-desktop] nav li::after {
+  position: absolute;
+  left: var(--theme-h4);
+  bottom: 6px;
+  height: 1px;
+  width: 0;
+  content: "";
+  background-color: var(--theme-color);
+  will-change: width;
+  -webkit-transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+:host[is-desktop] nav li:hover::after {
+  width: calc(100% - 2 * var(--theme-h4));
+}
+
+:host:not([is-desktop]) nav {
+  position: fixed;
+}
+
+:host:not([is-desktop]) nav ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.3s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.3s cubic-bezier(1, 0, 0, 1);
+  width: 400px;
+  background-color: white;
+}
+
+:host:not([is-desktop]) nav ul li {
+  padding: var(--theme-h4);
+  color: #333;
+  fill: #333;
+}
+
+:host:not([is-desktop]) nav ul li:hover {
+  background-color: var(--theme-color-faint);
+}
+
+:host:not([is-desktop]) nav[open] {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+:host:not([is-desktop]) nav[open] ul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}

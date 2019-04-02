@@ -1,0 +1,1 @@
+﻿:host{display:block;}:host .get-started .bg{height:calc(100vh - var(--vi-scroller--scroll-shadow-top-offset));width:100%;background-image:url(Media/top.jpg);background-position:center center;background-size:cover;background-repeat:no-repeat;}:host .get-started .bg .overlay{background-color:rgba(0,0,0,.65);}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "emitBOM": false,
+    "noEmitOnError": false,
+    "noEmitHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "alwaysStrict": true,
+    "sourceMap": false
+  },
+  "compileOnSave": true,
+  "files": [
+    "Scripts/typings/vidyano/vidyano.d.ts",
+    "WebComponents/Wrapper/wrapper.ts",
+    "WebComponents/Home/home.ts",
+    "WebComponents/Contact/contact.ts"
+  ]
+}

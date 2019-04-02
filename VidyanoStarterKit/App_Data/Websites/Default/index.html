@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidyano Starter Kit</title>
+    <script src="web2/Libs/webcomponentsjs/webcomponents-lite.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+    <link rel="import" href="web2/vidyano.html" />
+    <link rel="import" href="web2/vulcanize/WebComponents/Wrapper/wrapper.html" />
+    <link rel="import" href="web2/vulcanize/WebComponents/Home/home.html" />
+    <link rel="import" href="web2/vulcanize/WebComponents/Contact/contact.html" />
+</head>
+<body class="fullbleed">
+    <vi-app label="Vidyano Starter Kit" class="fit" theme-color="#8adc93" theme-accent-color="#6dceff">
+        <template is="dom-template">
+            <vsk-wrapper class="fit"></vsk-wrapper>
+        </template>
+
+        <vi-app-route route="" component="VidyanoStarterKit.WebComponents.Home" allow-signed-out></vi-app-route>
+    </vi-app>
+</body>
+</html>

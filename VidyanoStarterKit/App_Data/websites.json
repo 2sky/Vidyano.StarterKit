@@ -1,0 +1,17 @@
+{
+  "Websites": {
+    "Admin": {
+      "Type": 2,
+      "Bindings": [
+        "*/admin"
+      ]
+    },
+    "Default": {
+      "Type": 2,
+      "Bindings": [
+        "*"
+      ],
+      "DefaultUser": "74589c5f-7dbd-4e6f-97c0-07db5e3206d3"
+    }
+  }
+}

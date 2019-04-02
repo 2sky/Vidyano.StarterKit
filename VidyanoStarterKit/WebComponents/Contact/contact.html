@@ -1,0 +1,9 @@
+﻿<dom-module id="vsk-contact">
+    <template>
+        <link rel="stylesheet" href="contact.css" />
+        <vi-persistent-object-tab tab="[[contact.tabs.0]]" no-autofocus></vi-persistent-object-tab>
+        <button is="vi-button" label="Send" busy$="[[busy]]" disabled$="[[!canSend]]" on-tap="_send"></button>
+     </template>
+</dom-module>
+
+<script src="contact.js"></script>
